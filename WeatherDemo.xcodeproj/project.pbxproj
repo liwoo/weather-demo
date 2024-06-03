@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		587C95B82C0DCA5500ADE548 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 587C95B72C0DCA5500ADE548 /* Lottie */; };
 		588E00692C07D1CA00A04419 /* WeatherDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E00682C07D1CA00A04419 /* WeatherDemoApp.swift */; };
 		588E006D2C07D1CB00A04419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588E006C2C07D1CB00A04419 /* Assets.xcassets */; };
 		588E00702C07D1CB00A04419 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588E006F2C07D1CB00A04419 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587C95B82C0DCA5500ADE548 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +136,9 @@
 			dependencies = (
 			);
 			name = WeatherDemo;
+			packageProductDependencies = (
+				587C95B72C0DCA5500ADE548 /* Lottie */,
+			);
 			productName = WeatherDemo;
 			productReference = 588E00652C07D1CA00A04419 /* WeatherDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 588E005C2C07D1CA00A04419;
+			packageReferences = (
+				587C95B62C0DCA5500ADE548 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 588E00662C07D1CA00A04419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -414,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		587C95B62C0DCA5500ADE548 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		587C95B72C0DCA5500ADE548 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 587C95B62C0DCA5500ADE548 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 588E005D2C07D1CA00A04419 /* Project object */;
 }

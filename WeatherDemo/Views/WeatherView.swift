@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct WeatherView: View {
     var weather: WeatherResponse
@@ -35,7 +36,7 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack {
-                            Image(systemName: "sun.max")
+                            Image(systemName: "sun.rain")
                                 .font(.system(size: 40))
                             
                             Text(weather.weather[0].main)
@@ -96,6 +97,10 @@ struct WeatherView: View {
                 .background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
             }
+            
+            LottieView(animation: .named("RainAnimation"))
+              .playing()
+              .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         })
         .edgesIgnoringSafeArea(.bottom)
     }
